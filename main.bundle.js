@@ -1,6 +1,47 @@
 webpackJsonp([1,4],{
 
-/***/ 342:
+/***/ 300:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalStorageService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LocalStorageService = (function () {
+    function LocalStorageService() {
+    }
+    LocalStorageService.prototype.get = function (key) {
+        return localStorage.getItem(key);
+    };
+    LocalStorageService.prototype.set = function (key, value) {
+        localStorage.setItem(key, value);
+    };
+    LocalStorageService.prototype.getObj = function (key) {
+        return JSON.parse(localStorage.getItem(key));
+    };
+    LocalStorageService.prototype.setObj = function (key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    };
+    LocalStorageService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [])
+    ], LocalStorageService);
+    return LocalStorageService;
+}());
+//# sourceMappingURL=C:/Users/Fernando/Desktop/vozSintetica/src/local-storage.service.js.map
+
+/***/ }),
+
+/***/ 343:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +50,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 342;
+webpackEmptyContext.id = 343;
 
 
 /***/ }),
 
-/***/ 343:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(432);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(454);
 
 
 
@@ -35,7 +76,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 451:
+/***/ 452:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67,7 +108,7 @@ var ComunicacaoAudio = (function () {
 
 /***/ }),
 
-/***/ 452:
+/***/ 453:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,13 +126,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app works!';
     }
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(613),
-            styles: [__webpack_require__(610)]
+            template: __webpack_require__(614),
+            styles: [__webpack_require__(611)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -101,17 +141,18 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(421);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(427);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__janela_narrador_janela_narrador_component__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__botao_dropdown_botao_dropdown_component__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(422);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__local_storage_service__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__janela_narrador_janela_narrador_component__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__botao_dropdown_botao_dropdown_component__ = __webpack_require__(455);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -129,23 +170,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__janela_narrador_janela_narrador_component__["a" /* JanelaNarradorComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__botao_dropdown_botao_dropdown_component__["a" /* BotaoDropdownComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__janela_narrador_janela_narrador_component__["a" /* JanelaNarradorComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__botao_dropdown_botao_dropdown_component__["a" /* BotaoDropdownComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
             ],
-            providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_4__local_storage_service__["a" /* LocalStorageService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
@@ -155,7 +197,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 454:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -239,8 +281,8 @@ var BotaoDropdownComponent = (function () {
     BotaoDropdownComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-botao-dropdown',
-            template: __webpack_require__(614),
-            styles: [__webpack_require__(611)]
+            template: __webpack_require__(615),
+            styles: [__webpack_require__(612)]
         }), 
         __metadata('design:paramtypes', [])
     ], BotaoDropdownComponent);
@@ -250,12 +292,13 @@ var BotaoDropdownComponent = (function () {
 
 /***/ }),
 
-/***/ 455:
+/***/ 456:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ComunicacaoAudio__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_storage_service__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ComunicacaoAudio__ = __webpack_require__(452);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JanelaNarradorComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -268,18 +311,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var JanelaNarradorComponent = (function () {
     //***Construtor***
-    function JanelaNarradorComponent() {
+    function JanelaNarradorComponent(save) {
+        this.save = save;
         //***Atributos***
+        this.KEY = 'favoritos';
         this.habilitarBotao = true;
         this.linguagemNarracao = "pt-BR";
         this.listaNomesLinguagem = ["pt-BR", "en-US"];
         this.nomeBotaoaLinguagem = "Linguagem";
         this.nomeBotaoFavoritos = "Favoritos";
-        this.listaFavoritos = ["Bom dia", "Boa tarde", "Boa noite"];
         this.textoInput = "";
-        this.comunicacao = new __WEBPACK_IMPORTED_MODULE_1__ComunicacaoAudio__["a" /* ComunicacaoAudio */]();
+        this.comunicacao = new __WEBPACK_IMPORTED_MODULE_2__ComunicacaoAudio__["a" /* ComunicacaoAudio */]();
+        this.buscarFavoritos();
         this.inicializaListaLinguagem();
     }
     JanelaNarradorComponent.prototype.ngOnInit = function () { };
@@ -330,6 +376,7 @@ var JanelaNarradorComponent = (function () {
      */
     JanelaNarradorComponent.prototype.addFavorito = function () {
         this.listaFavoritos.push(this.textoInput);
+        this.salvarFavoritos();
         console.log(this.textoInput);
     };
     /**
@@ -349,6 +396,7 @@ var JanelaNarradorComponent = (function () {
                 return atual;
             }
         });
+        this.salvarFavoritos();
     };
     /**
      *@argument: Habilita o botão de narração e verifica se o mesmo continua válido;
@@ -383,21 +431,39 @@ var JanelaNarradorComponent = (function () {
             }
         }, 1000);
     };
+    /**
+     * @argument: Buscar lista de favoritos do localStorage e armazena em array;
+     */
+    JanelaNarradorComponent.prototype.buscarFavoritos = function () {
+        this.listaFavoritos = this.save.getObj(this.KEY);
+        if (this.listaFavoritos == null) {
+            this.listaFavoritos = ["Bom dia", "Boa tarde", "Boa noite"];
+            console.log("lista vazia...");
+        }
+        console.log(this.listaFavoritos);
+    };
+    /**
+     * @argument: Salva lista de favoritos no localStorage;
+     */
+    JanelaNarradorComponent.prototype.salvarFavoritos = function () {
+        this.save.setObj(this.KEY, this.listaFavoritos);
+    };
     JanelaNarradorComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["U" /* Component */])({
             selector: 'app-janela-narrador',
-            template: __webpack_require__(615),
-            styles: [__webpack_require__(612)]
+            template: __webpack_require__(616),
+            styles: [__webpack_require__(613)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__local_storage_service__["a" /* LocalStorageService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__local_storage_service__["a" /* LocalStorageService */]) === 'function' && _a) || Object])
     ], JanelaNarradorComponent);
     return JanelaNarradorComponent;
+    var _a;
 }());
 //# sourceMappingURL=C:/Users/Fernando/Desktop/vozSintetica/src/janela-narrador.component.js.map
 
 /***/ }),
 
-/***/ 456:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -413,55 +479,55 @@ var environment = {
 
 /***/ }),
 
-/***/ 610:
+/***/ 611:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 611:
+/***/ 612:
 /***/ (function(module, exports) {
 
 module.exports = ".botaoFechar{\r\n    width: 100%;\r\n    text-align: center;\r\n    margin-bottom:0;\r\n}\r\n\r\n\r\n.glyphicon-remove{\r\n    width: 20px;\r\n    height: 100%;\r\n\r\n\r\n    color:darkgrey;\r\n    \r\n}"
 
 /***/ }),
 
-/***/ 612:
-/***/ (function(module, exports) {
-
-module.exports = ".janela{\r\n    width: 80%;\r\n    max-width: 600px;\r\n    height: 20em;\r\n    margin: auto;\r\n    margin-top: 1em;\r\n    border: 2px solid black;\r\n    border-radius: 5px;\r\n}\r\n\r\nh2{\r\n    text-align: center;\r\n    margin-top: 4%;\r\n    margin-bottom: 8%;\r\n}\r\n\r\ninput{\r\n    text-align: center;\r\n    margin: auto;\r\n}\r\n\r\n.input-group{\r\n width: 100%;   \r\n}"
-
-/***/ }),
-
 /***/ 613:
 /***/ (function(module, exports) {
 
-module.exports = "<app-janela-narrador></app-janela-narrador>\n\n"
+module.exports = ".janela{\r\n    width: 80%;\r\n    max-width: 600px;\r\n    height: 20em;\r\n    margin: auto;\r\n    margin-top: 1em;\r\n    border: 2px solid black;\r\n    border-radius: 5px;\r\n}\r\n\r\nh2{\r\n    text-align: center;\r\n    margin-top: 4%;\r\n    margin-bottom: 8%;\r\n}\r\n\r\ninput{\r\n    text-align: center;\r\n    margin: auto;\r\n}\r\n\r\n.input-group{\r\n width: 100%;   \r\n}\r\n\r\n\r\n"
 
 /***/ }),
 
 /***/ 614:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Single button -->\n<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn dropdown-toggle\" [ngClass]=\"classes()\"  data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" [disabled]=\"listaVazia()\">\n    {{nome}} <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\">\n    <li *ngFor=\"let item of lista\">\n      <a href=\"#\" [ngClass]=\"classeOpcoes\" (click)=\"clickItem(item)\"><a *ngIf=\"habilitarBotaoRemover\" class=\"glyphicon glyphicon-remove\" (click)=\"clickRemover(item)\"></a>{{item}}</a>\n    </li>\n  </ul>\n</div>\n    \n    \n\n"
+module.exports = "<app-janela-narrador></app-janela-narrador>\n\n"
 
 /***/ }),
 
 /***/ 615:
 /***/ (function(module, exports) {
 
+module.exports = "<!-- Single button -->\n<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn dropdown-toggle\" [ngClass]=\"classes()\"  data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" [disabled]=\"listaVazia()\">\n    {{nome}} <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\">\n    <li *ngFor=\"let item of lista\">\n      <a href=\"#\" [ngClass]=\"classeOpcoes\" (click)=\"clickItem(item)\"><a *ngIf=\"habilitarBotaoRemover\" class=\"glyphicon glyphicon-remove\" (click)=\"clickRemover(item)\"></a>{{item}}</a>\n    </li>\n  </ul>\n</div>\n    \n    \n\n"
+
+/***/ }),
+
+/***/ 616:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"alert alert-info janela\">\n  \n  <h2>Narrar texto</h2>\n  \n  <form>\n    \n    <label>Informe o texto</label>\n    <div class=\"input-group\">\n      <span class=\"input-group-btn\">\n        <button [disabled]=\"!habilitarBotao\" class=\"btn btn-primary\" type=\"submit\" (click)=\"clickBotao(texto.value)\" >\n          Go!\n        </button>\n      </span>\n      <input type=\"text\" class=\"form-control\" placeholder=\"O que deseja narrar ?\" #texto [(ngModel)]= \"textoInput\" name=\"textoInput\"  required autofocus>\n      \n    </div>\n    <app-botao-dropdown [classeBotao]=\"{'btn-info':true}\" [nome]=\"nomeBotaoaLinguagem\" [lista]=\"listaNomesLinguagem\" (itemClicado)=\"alterarLinguagem($event)\"></app-botao-dropdown>\n    <app-botao-dropdown [nome]=\"nomeBotaoFavoritos\" [lista]=\"listaFavoritos\" (itemClicado)=\"alocandoFavorito($event)\" (removerClicado)=\"removerFavorito($event)\" [habilitarBotaoRemover]=\"true\"></app-botao-dropdown>\n    <button type=\"menu\" class=\"btn btn-primary\" (click)=\"addFavorito()\" >Favoritar texto</button>\n  \n  </form>\n  \n</div>\n\n"
 
 /***/ }),
 
-/***/ 628:
+/***/ 629:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(343);
+module.exports = __webpack_require__(344);
 
 
 /***/ })
 
-},[628]);
+},[629]);
 //# sourceMappingURL=main.bundle.map

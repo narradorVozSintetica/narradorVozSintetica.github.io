@@ -1,15 +1,15 @@
 webpackJsonp([2,4],{
 
-/***/ 345:
+/***/ 346:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(607);
+var content = __webpack_require__(608);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(626)(content, {});
+var update = __webpack_require__(627)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27,22 +27,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 607:
+/***/ 608:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(608)();
+exports = module.exports = __webpack_require__(609)();
 // imports
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n/*@import '~bootstrap/dist/css/bootstrap.css';*/\n\nbody{\n   background: linear-gradient(135deg,aqua,aquamarine);\n}\n\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n/*@import '~bootstrap/dist/css/bootstrap.css';*/\n\n\nbody{\n   background: linear-gradient(135deg,aqua,aquamarine);\n}\n\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 608:
+/***/ 609:
 /***/ (function(module, exports) {
 
 /*
@@ -99,7 +99,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 626:
+/***/ 627:
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +352,13 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 630:
+/***/ 631:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(345);
+module.exports = __webpack_require__(346);
 
 
 /***/ })
 
-},[630]);
+},[631]);
 //# sourceMappingURL=styles.bundle.map
